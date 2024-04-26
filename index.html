@@ -9,16 +9,21 @@
 </head>
 
 <body>
-    <div class="contarner">
+    <div class="container">
         <div class="header">
             <div class="firstbtn">
-               <button type="button"class="btnbtn">
-                <span class="firstspan"></span>
-                <span class="firstspan"></span>
-                <span class="firstspan"></span>
+               <button type="button"class="btn">
+                <span></span>
+                <span></span>
+                <span></span>
                </button>
             </div>
-            <input type="search" name="search" id="search" placeholder="search">
+            <div class="innerHeader">
+                <svg xmlns="http://www.w3.org/2000/svg" id="search_icon" class="search_img"x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
+                    <path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path><path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path><path fill="#37474F" d="M36.2 32.1H40.2V44.400000000000006H36.2z" transform="rotate(-45.001 38.24 38.24)"></path><path fill="#64B5F6" d="M20 7A13 13 0 1 0 20 33A13 13 0 1 0 20 7Z"></path><path fill="#BBDEFB" d="M26.9,14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2,1.2-6.9,3.2c-0.4,0.4-0.3,1.1,0.1,1.4c0.4,0.4,1.1,0.3,1.4-0.1C16,13.9,17.9,13,20,13s4,0.9,5.4,2.5c0.2,0.2,0.5,0.4,0.8,0.4c0.2,0,0.5-0.1,0.6-0.2C27.2,15.3,27.2,14.6,26.9,14.2z"></path>
+                    </svg>
+                <input type="search" name="search" id="search" placeholder="search">
+            </div>
             <ytd-notification-topbar-button-renderer
                 class="style-scope ytd-masthead"><!--css-build:shady--><!--css-build:shady--><yt-icon-button id="icon"
                     class="style-scope ytd-notification-topbar-button-renderer"
@@ -26,7 +31,7 @@
                         aria-label="Notifications">
                         <yt-icon-badge-shape>
                             <div
-                                class="yt-spec-icon-badge-shape yt-spec-icon-badge-shape--type-notification yt-spec-icon-badge-shape--style-overlay">
+                                class="Notifications">
                                 <div class="yt-spec-icon-badge-shape__icon"><yt-icon
                                         style=""><!--css-build:shady--><!--css-build:shady--><yt-icon-shape
                                             class="style-scope yt-icon"><icon-shape class="yt-spec-icon-shape">
@@ -54,19 +59,38 @@
                 </tp-yt-paper-tooltip>
             </ytd-notification-topbar-button-renderer>
         </div>
+       
         
         <hr>
-        <div class="contaier">
-            <div class="movice_box">
-                <video controls autoplay
+        <div class="link_box">
+            <a href="#"link>home</a>
+            <a href="#"link>about</a>
+            <a href="#"link>downloads</a>
+            <a href="#"link>contact</a>
+        </div>
+        <div class="movie_Contaier">
+            <div class="movie_box">
+                <div class="inner_box">
+                    <video controls  crossorigin="use-credentials"
+                    poster="./c82272d331d9bd0da2d613824b68be24.jpg">
+                    <source src="Spider-Man Across The Spider-Verse 2023.mp4">
+                </video>
+                </div>
+                <h2 name>Spider-Man Across The Spider-Verse 2023</h2>    
+            
+            </div>
+            <div class="movie_box">
+                <div class="inner_box">
+                    <video controls  crossorigin="use-credentials"
                     poster="./1704106154717.jpg">
                     <source src="4. Truthy vs Falsey.mp4">
                 </video>
-                <!-- <img src="../png-transparent-red-sedan-car-door-car-seat-top-view-motor-vehicle-red-car-top-view-orange-car-seat-car-thumbnail.png"
-                            alt=""> -->
+                </div>
+                <h2 name>Truthy vs Falsey</h2>    
             
             </div>
     </div>
+    
     <script type="module" src="index.js"></script>
 </body>
 
