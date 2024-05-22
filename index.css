@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background-color: rgba(0, 0, 0);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    overflow: hidden;
+}
+body::-webkit-scrollbar{
+   display: block;
+
+}
+.root{
+    display: flex;
+    width: 100%;
+    height:100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    animation: roll1 .3s infinite linear ;
+}
+@keyframes  roll1 {
+    to{
+        transform: rotate(360deg);
+    }
+} 
+
+.root .inner_root{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.root .inner_root [name]{
+    background-color:transparent;
+    width:30rem ;
+    height: 30rem;
+    position:absolute;
+    border-radius: 50%;
+    animation: rolls 5s infinite linear reverse  ;
+    gap: 55px;
+    transform: scale(0.1);
+}
+@keyframes rolls{
+    to{
+        transform:  scale(1.1);
+    }
+}
+.root .inner_root [name]:nth-child(1){
+    rotate: 50deg;
+    box-shadow: var(--priamry-color) 10px 10px 10px 10px ;
+    border-left: 10px var(--priamry-color) solid;
+}
+.root .inner_root [name]:nth-child(2){
+    rotate:-70deg;
+    box-shadow: rgb(0, 255, 0) 10px 10px 10px 10px ;
+    border-left: 10px rgb(0, 255, 0) solid;
+}
+.root .inner_root [name]:nth-child(3){
+    rotate:-170deg;
+    box-shadow: red 10px 10px 10px 10px ;
+    border-left: 10px red solid;
+}
+.root .inner_root [name]:nth-child(4){
+    box-shadow: rgb(255, 217, 0) 10px 10px 10px 10px ;
+    border-left: 10px rgb(255, 217, 0) solid;
+
+}
+
+.root .inner_root [logo]{
+    width: 200px;
+    height: 10px;
+    /* background-color: var(--priamry-color); */
+    position:absolute;
+    animation: rotate 3s infinite linear ease-in-out;
+}
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.root .inner_root [logo]:nth-child(5){
+    transform: rotate(40deg);
+    background: linear-gradient(90deg,transparent,red);
+ 
+
+}
+.root .inner_root [logo]:nth-child(6){
+    transform: rotate(-40deg);
+    background: linear-gradient(90deg,red,transparent);
+ 
+
+}
+
+.root .inner_root [logo]:nth-child(7){
+    transform: rotate(90deg);
+    background: linear-gradient(90deg,red,transparent);
+}
